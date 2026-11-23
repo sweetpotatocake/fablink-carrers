@@ -1,0 +1,57 @@
+name: FABLINK daily refresh and publish
+on:
+  schedule:
+    # 08:17 KST daily (23:17 UTC previous day)
+    - cron: '17 23 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: fablink-pages
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Discover verified postings (requires key)
+        env:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+        run: |
+          if [ -n "$SERPER_API_KEY" ]; then
+            python update_jobs.py
+          else
+            echo 'No SERPER_API_KEY: automatic discovery is not enabled; publishing static data.'
+          fi
+      - name: Rebuild page
+        run: python render.py
+      - name: Commit updated data to repository
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data.json index.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh job postings [skip ci]'
+            git push
+          fi
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Publish updated site
+        id: deployment
+        uses: actions/deploy-pages@v4
