@@ -1,43 +1,46 @@
 name: FABLINK daily refresh and publish
+
 on:
   schedule:
-    # 08:17 KST daily (23:17 UTC previous day)
+    # Every day 08:17 Korea time (23:17 UTC on previous day)
     - cron: '17 23 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
+
 permissions:
   contents: write
   pages: write
   id-token: write
+
 concurrency:
   group: fablink-pages
   cancel-in-progress: false
+
 jobs:
-  refresh:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Discover verified postings (requires key)
+
+      - name: Discover postings (requires search API key)
         env:
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
         run: |
           if [ -n "$SERPER_API_KEY" ]; then
             python update_jobs.py
           else
-            echo 'No SERPER_API_KEY: automatic discovery is not enabled; publishing static data.'
+            echo 'SERPER_API_KEY is not configured. Existing postings will be published without fresh discovery.'
           fi
-      - name: Rebuild page
+
+      - name: Rebuild HTML
         run: python render.py
-      - name: Commit updated data to repository
+
+      - name: Save updated postings to repository
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -46,12 +49,30 @@ jobs:
             git commit -m 'chore: refresh job postings [skip ci]'
             git push
           fi
+
+      - name: Prepare public website
+        run: |
+          mkdir -p public
+          cp index.html public/index.html
+          cp data.json public/data.json
+          touch public/.nojekyll
+          test -s public/index.html
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: '.'
-      - name: Publish updated site
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
