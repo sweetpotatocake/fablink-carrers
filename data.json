@@ -1,0 +1,917 @@
+{
+  "companies": [
+    {
+      "name": "삼성전자",
+      "sector": "전공정·제조",
+      "tier": "대기업",
+      "homepage": "https://www.samsung.com/sec/"
+    },
+    {
+      "name": "SK하이닉스",
+      "sector": "전공정·제조",
+      "tier": "대기업",
+      "homepage": "https://www.skhynix.com/"
+    },
+    {
+      "name": "DB하이텍",
+      "sector": "전공정·제조",
+      "tier": "중견기업",
+      "homepage": "https://www.dbhitek.com/"
+    },
+    {
+      "name": "키파운드리",
+      "sector": "전공정·제조",
+      "tier": "중견기업"
+    },
+    {
+      "name": "SK키파운드리",
+      "sector": "전공정·제조",
+      "tier": "중견기업"
+    },
+    {
+      "name": "매그나칩반도체",
+      "sector": "전공정·제조",
+      "tier": "중견기업",
+      "homepage": "https://www.magnachip.com/"
+    },
+    {
+      "name": "LX세미콘",
+      "sector": "설계·팹리스",
+      "tier": "대기업",
+      "homepage": "https://www.lxsemicon.com/"
+    },
+    {
+      "name": "텔레칩스",
+      "sector": "설계·팹리스",
+      "tier": "중견기업",
+      "homepage": "https://www.telechips.com/"
+    },
+    {
+      "name": "어보브반도체",
+      "sector": "설계·팹리스",
+      "tier": "중견기업",
+      "homepage": "https://www.abov.co.kr/"
+    },
+    {
+      "name": "실리콘마이터스",
+      "sector": "설계·팹리스",
+      "tier": "강소기업"
+    },
+    {
+      "name": "리노공업",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.leeno.com/"
+    },
+    {
+      "name": "하나마이크론",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.hanamicron.com/"
+    },
+    {
+      "name": "SFA반도체",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.sfasemicon.com/"
+    },
+    {
+      "name": "네패스",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.nepes.co.kr/"
+    },
+    {
+      "name": "네패스아크",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.nepesark.co.kr/"
+    },
+    {
+      "name": "LB세미콘",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.lbsemicon.com/"
+    },
+    {
+      "name": "LB루셈",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "두산테스나",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.doosantesna.com/"
+    },
+    {
+      "name": "시그네틱스",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "앰코테크놀로지코리아",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://amkor.com/"
+    },
+    {
+      "name": "ASE코리아",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "스태츠칩팩코리아",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "ISC",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.isc21.kr/"
+    },
+    {
+      "name": "마이크로컨텍솔",
+      "sector": "후공정·검사",
+      "tier": "강소기업"
+    },
+    {
+      "name": "티에스이",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "디아이",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "테크윙",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.techwing.co.kr/"
+    },
+    {
+      "name": "인텍플러스",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.intekplus.com/"
+    },
+    {
+      "name": "고영테크놀러지",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.kohyoung.com/"
+    },
+    {
+      "name": "아이엠티",
+      "sector": "후공정·검사",
+      "tier": "강소기업"
+    },
+    {
+      "name": "삼성전기",
+      "sector": "PCB·패키지기판",
+      "tier": "대기업",
+      "homepage": "https://www.samsungsem.com/"
+    },
+    {
+      "name": "LG이노텍",
+      "sector": "PCB·패키지기판",
+      "tier": "대기업",
+      "homepage": "https://www.lginnotek.com/"
+    },
+    {
+      "name": "대덕전자",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.daeduck.com/"
+    },
+    {
+      "name": "이수페타시스",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.petasys.com/"
+    },
+    {
+      "name": "심텍",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.simmtech.com/"
+    },
+    {
+      "name": "코리아써키트",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.koreacircuit.com/"
+    },
+    {
+      "name": "디에이피",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업"
+    },
+    {
+      "name": "디에이피솔루션즈",
+      "sector": "PCB·패키지기판",
+      "tier": "강소기업"
+    },
+    {
+      "name": "대덕",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업"
+    },
+    {
+      "name": "현우산업",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.hyunwoopcb.com/"
+    },
+    {
+      "name": "이녹스첨단소재",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.innoxamc.com/"
+    },
+    {
+      "name": "디에스케이",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업"
+    },
+    {
+      "name": "뉴프렉스",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.newflex.co.kr/"
+    },
+    {
+      "name": "인터플렉스",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.interflex.co.kr/"
+    },
+    {
+      "name": "영풍전자",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업"
+    },
+    {
+      "name": "시노펙스",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.synopex.com/"
+    },
+    {
+      "name": "타이거일렉",
+      "sector": "PCB·패키지기판",
+      "tier": "강소기업"
+    },
+    {
+      "name": "이브이첨단소재",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업"
+    },
+    {
+      "name": "스템코",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.stemco.co.kr/"
+    },
+    {
+      "name": "대만 유니마이크론",
+      "sector": "PCB·패키지기판",
+      "tier": "대기업"
+    },
+    {
+      "name": "세메스",
+      "sector": "전공정 장비",
+      "tier": "대기업",
+      "homepage": "https://www.semes.com/"
+    },
+    {
+      "name": "원익IPS",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.wonikips.com/"
+    },
+    {
+      "name": "주성엔지니어링",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.jusung.com/"
+    },
+    {
+      "name": "유진테크",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.eugenetech.co.kr/"
+    },
+    {
+      "name": "테스",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.hites.co.kr/"
+    },
+    {
+      "name": "PSK",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.pskinc.com/"
+    },
+    {
+      "name": "피에스케이홀딩스",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "케이씨텍",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.kctech.com/"
+    },
+    {
+      "name": "에이피티씨",
+      "sector": "전공정 장비",
+      "tier": "중견기업"
+    },
+    {
+      "name": "브이엠",
+      "sector": "전공정 장비",
+      "tier": "중견기업"
+    },
+    {
+      "name": "넥스틴",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.nextin.com/"
+    },
+    {
+      "name": "제우스",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.globalzeus.com/"
+    },
+    {
+      "name": "한미반도체",
+      "sector": "후공정·검사",
+      "tier": "중견기업",
+      "homepage": "https://www.hanmisemi.com/"
+    },
+    {
+      "name": "SFA",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.sfa.co.kr/"
+    },
+    {
+      "name": "에스티아이",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.sti.co.kr/"
+    },
+    {
+      "name": "에프에스티",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.fstc.co.kr/"
+    },
+    {
+      "name": "아이씨디",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.icd.co.kr/"
+    },
+    {
+      "name": "에스엔유프리시젼",
+      "sector": "전공정 장비",
+      "tier": "중견기업"
+    },
+    {
+      "name": "에스에프에이",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.sfa.co.kr/"
+    },
+    {
+      "name": "로체시스템즈",
+      "sector": "전공정 장비",
+      "tier": "중견기업"
+    },
+    {
+      "name": "에스피지",
+      "sector": "전공정 장비",
+      "tier": "중견기업"
+    },
+    {
+      "name": "ASML코리아",
+      "sector": "외국계 장비",
+      "tier": "대기업",
+      "homepage": "https://www.asml.com/"
+    },
+    {
+      "name": "어플라이드머티어리얼즈코리아",
+      "sector": "외국계 장비",
+      "tier": "대기업",
+      "homepage": "https://www.appliedmaterials.com/"
+    },
+    {
+      "name": "램리서치코리아",
+      "sector": "외국계 장비",
+      "tier": "대기업",
+      "homepage": "https://www.lamresearch.com/"
+    },
+    {
+      "name": "도쿄일렉트론코리아",
+      "sector": "외국계 장비",
+      "tier": "대기업",
+      "homepage": "https://www.tel.com/"
+    },
+    {
+      "name": "KLA코리아",
+      "sector": "외국계 장비",
+      "tier": "대기업",
+      "homepage": "https://www.kla.com/"
+    },
+    {
+      "name": "SCREEN SPE 코리아",
+      "sector": "외국계 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.screen.co.jp/"
+    },
+    {
+      "name": "스크린에스피이코리아",
+      "sector": "외국계 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.screen.co.jp/"
+    },
+    {
+      "name": "원익머트리얼즈",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.wonikmaterials.com/"
+    },
+    {
+      "name": "솔브레인",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.soulbrain.co.kr/"
+    },
+    {
+      "name": "동진쎄미켐",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.dongjin.com/"
+    },
+    {
+      "name": "이엔에프테크놀로지",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "한솔케미칼",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.hansolchemical.com/"
+    },
+    {
+      "name": "후성",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.foosungchem.com/"
+    },
+    {
+      "name": "SK스페셜티",
+      "sector": "소재·도금약품",
+      "tier": "대기업",
+      "homepage": "https://www.skspecialty.com/"
+    },
+    {
+      "name": "SK실트론",
+      "sector": "소재·도금약품",
+      "tier": "대기업",
+      "homepage": "https://www.sksiltron.com/"
+    },
+    {
+      "name": "OCI",
+      "sector": "소재·도금약품",
+      "tier": "대기업",
+      "homepage": "https://www.oci.co.kr/"
+    },
+    {
+      "name": "덕산테코피아",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "덕산하이메탈",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.dshm.co.kr/"
+    },
+    {
+      "name": "레이크머티리얼즈",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "디엔에프",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "퓨릿",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "와이엠티",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.ymtechnology.com/"
+    },
+    {
+      "name": "켐트로닉스",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.chemtronics.co.kr/"
+    },
+    {
+      "name": "LT메탈",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.ltmetal.co.kr/"
+    },
+    {
+      "name": "삼화페인트공업",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "맥더미드 퍼포먼스 솔루션즈 코리아",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.macdermidalpha.com/"
+    },
+    {
+      "name": "아토텍코리아",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.atotech.com/"
+    },
+    {
+      "name": "엔쏘닉",
+      "sector": "소재·도금약품",
+      "tier": "강소기업"
+    },
+    {
+      "name": "와이씨켐",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "미원상사",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.mwc.co.kr/"
+    },
+    {
+      "name": "램테크놀러지",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "케이씨코트렐",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "에이디텍",
+      "sector": "설계·팹리스",
+      "tier": "강소기업"
+    },
+    {
+      "name": "딥엑스",
+      "sector": "설계·팹리스",
+      "tier": "강소기업",
+      "homepage": "https://deepx.ai/"
+    },
+    {
+      "name": "에이앤아이",
+      "sector": "전공정 장비",
+      "tier": "강소기업"
+    },
+    {
+      "name": "리버트론",
+      "sector": "설계·팹리스",
+      "tier": "강소기업"
+    },
+    {
+      "name": "코비스테크놀로지",
+      "sector": "전공정 장비",
+      "tier": "강소기업"
+    },
+    {
+      "name": "테라다인코리아",
+      "sector": "외국계 장비",
+      "tier": "대기업",
+      "homepage": "https://www.teradyne.com/"
+    },
+    {
+      "name": "키사이트테크놀로지스코리아",
+      "sector": "외국계 장비",
+      "tier": "대기업",
+      "homepage": "https://www.keysight.com/"
+    },
+    {
+      "name": "에이디테크놀로지",
+      "sector": "설계·팹리스",
+      "tier": "중견기업",
+      "homepage": "https://www.adtek.co.kr/"
+    },
+    {
+      "name": "가온칩스",
+      "sector": "설계·팹리스",
+      "tier": "중견기업",
+      "homepage": "https://www.gaonchips.com/"
+    },
+    {
+      "name": "에이직랜드",
+      "sector": "설계·팹리스",
+      "tier": "중견기업"
+    },
+    {
+      "name": "오픈엣지테크놀로지",
+      "sector": "설계·팹리스",
+      "tier": "중견기업",
+      "homepage": "https://www.openedges.com/"
+    },
+    {
+      "name": "퀄리타스반도체",
+      "sector": "설계·팹리스",
+      "tier": "강소기업"
+    },
+    {
+      "name": "파두",
+      "sector": "설계·팹리스",
+      "tier": "중견기업",
+      "homepage": "https://www.fadu.io/"
+    },
+    {
+      "name": "제주반도체",
+      "sector": "설계·팹리스",
+      "tier": "중견기업"
+    },
+    {
+      "name": "넥스트칩",
+      "sector": "설계·팹리스",
+      "tier": "중견기업",
+      "homepage": "https://www.nextchip.com/"
+    },
+    {
+      "name": "에이엘티",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "윈팩",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "큐알티",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "아이텍",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "오로스테크놀로지",
+      "sector": "전공정 장비",
+      "tier": "중견기업"
+    },
+    {
+      "name": "엘오티베큠",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.lotvacuum.com/"
+    },
+    {
+      "name": "엔투텍",
+      "sector": "전공정 장비",
+      "tier": "강소기업"
+    },
+    {
+      "name": "에이프로",
+      "sector": "전공정 장비",
+      "tier": "중견기업"
+    },
+    {
+      "name": "기가비스",
+      "sector": "PCB·패키지기판",
+      "tier": "중견기업",
+      "homepage": "https://www.gigavis.com/"
+    },
+    {
+      "name": "코세스",
+      "sector": "후공정·검사",
+      "tier": "중견기업"
+    },
+    {
+      "name": "유니셈",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.unisem.co.kr/"
+    },
+    {
+      "name": "GST",
+      "sector": "전공정 장비",
+      "tier": "중견기업",
+      "homepage": "https://www.gst-in.com/"
+    },
+    {
+      "name": "지오엘리먼트",
+      "sector": "소재·도금약품",
+      "tier": "강소기업"
+    },
+    {
+      "name": "미코",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "원익QnC",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.wonikqnc.com/"
+    },
+    {
+      "name": "월덱스",
+      "sector": "소재·도금약품",
+      "tier": "중견기업"
+    },
+    {
+      "name": "하나머티리얼즈",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.hanamts.com/"
+    },
+    {
+      "name": "티씨케이",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.tck.co.kr/"
+    },
+    {
+      "name": "코미코",
+      "sector": "소재·도금약품",
+      "tier": "중견기업",
+      "homepage": "https://www.komico.com/"
+    }
+  ],
+  "jobs": [
+    {
+      "company": "스크린에스피이코리아",
+      "title": "반도체 장비 CS 및 SET UP 엔지니어 (신입)",
+      "sector": "외국계 장비",
+      "degree": "학사 이상",
+      "experience": "신입",
+      "location": "평택·이천·청주·용인 등",
+      "deadline": "2026-11-23",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55502916",
+      "source": "사람인",
+      "note": "학위 요건은 원문에서 재확인 필요",
+      "degreeVerified": false,
+      "verifiedAt": "2026-11-23",
+      "id": "job1"
+    },
+    {
+      "company": "에이디텍",
+      "title": "반도체 IC Field Application Engineer",
+      "sector": "설계·팹리스",
+      "degree": "학사 이상",
+      "experience": "신입",
+      "location": "경기",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55628814",
+      "source": "사람인",
+      "note": "4년제 대졸 이상 명시",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job2"
+    },
+    {
+      "company": "딥엑스",
+      "title": "AI 반도체 Field Application Engineer (영어 가능)",
+      "sector": "설계·팹리스",
+      "degree": "학사 이상",
+      "experience": "신입",
+      "location": "성남 판교",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55640718",
+      "source": "사람인",
+      "note": "4년제 대졸 이상 명시",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job3"
+    },
+    {
+      "company": "에이앤아이",
+      "title": "반도체 자동화 장비 운영 및 비전 SW 개발",
+      "sector": "전공정 장비",
+      "degree": "학사 이상",
+      "experience": "신입·경력",
+      "location": "경기 수원",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55170549",
+      "source": "사람인",
+      "note": "4년제 대졸 이상 명시",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job4"
+    },
+    {
+      "company": "리버트론",
+      "title": "Hardware 설계 엔지니어 (회로·PCB)",
+      "sector": "설계·팹리스",
+      "degree": "학사 이상",
+      "experience": "신입·경력",
+      "location": "서울 영등포",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55564005",
+      "source": "사람인",
+      "note": "반도체 관련 전공 우대·학사 이상",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job5"
+    },
+    {
+      "company": "에이디텍",
+      "title": "PCB 해외 기술영업 (중국어·영어 가능자)",
+      "sector": "PCB·패키지기판",
+      "degree": "학사 이상",
+      "experience": "신입",
+      "location": "경기 화성",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55628776",
+      "source": "사람인",
+      "note": "PCB 관련 직무·4년제 대졸 이상",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job6"
+    },
+    {
+      "company": "맥더미드 퍼포먼스 솔루션즈 코리아",
+      "title": "Technical Service Engineer — PCB 표면처리",
+      "sector": "소재·도금약품",
+      "degree": "학사 이상",
+      "experience": "경력 5~10년",
+      "location": "경기 안산",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55604541",
+      "source": "사람인",
+      "note": "4년제 대졸·경력 5~10년",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job7"
+    },
+    {
+      "company": "미공개 반도체부품 기업",
+      "title": "도금 공정 엔지니어 (헤드헌팅)",
+      "sector": "소재·도금약품",
+      "degree": "학사 이상",
+      "experience": "경력 4~8년",
+      "location": "충북 청주",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55633733",
+      "source": "사람인",
+      "note": "고용 기업명 비공개·4년제 대졸 이상",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job8"
+    },
+    {
+      "company": "테라다인코리아",
+      "title": "반도체 기구 설계 엔지니어",
+      "sector": "외국계 장비",
+      "degree": "학사 이상",
+      "experience": "경력",
+      "location": "공고 참조",
+      "deadline": "2026-11-30",
+      "url": "https://m.jobkorea.co.kr/Recruit/GI_Read/50363609",
+      "source": "잡코리아",
+      "note": "대졸 이상·채용 시 조기 마감 가능",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job9"
+    }
+  ],
+  "checkedAt": "2026-11-23",
+  "sync": {
+    "mode": "not-configured",
+    "lastAttemptAt": null,
+    "lastSearchSuccessAt": null,
+    "scope": "자동 갱신 미설정 · 이전에 확인한 공고 스냅샷"
+  }
+}
