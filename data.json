@@ -787,21 +787,6 @@
       "id": "job1"
     },
     {
-      "company": "에이디텍",
-      "title": "반도체 IC Field Application Engineer",
-      "sector": "설계·팹리스",
-      "degree": "학사 이상",
-      "experience": "신입",
-      "location": "경기",
-      "deadline": "2026-11-30",
-      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55628814",
-      "source": "사람인",
-      "note": "4년제 대졸 이상 명시",
-      "degreeVerified": true,
-      "verifiedAt": "2026-11-23",
-      "id": "job2"
-    },
-    {
       "company": "딥엑스",
       "title": "AI 반도체 Field Application Engineer (영어 가능)",
       "sector": "설계·팹리스",
@@ -817,21 +802,6 @@
       "id": "job3"
     },
     {
-      "company": "에이앤아이",
-      "title": "반도체 자동화 장비 운영 및 비전 SW 개발",
-      "sector": "전공정 장비",
-      "degree": "학사 이상",
-      "experience": "신입·경력",
-      "location": "경기 수원",
-      "deadline": "2026-11-30",
-      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55170549",
-      "source": "사람인",
-      "note": "4년제 대졸 이상 명시",
-      "degreeVerified": true,
-      "verifiedAt": "2026-11-23",
-      "id": "job4"
-    },
-    {
       "company": "리버트론",
       "title": "Hardware 설계 엔지니어 (회로·PCB)",
       "sector": "설계·팹리스",
@@ -845,21 +815,6 @@
       "degreeVerified": true,
       "verifiedAt": "2026-11-23",
       "id": "job5"
-    },
-    {
-      "company": "에이디텍",
-      "title": "PCB 해외 기술영업 (중국어·영어 가능자)",
-      "sector": "PCB·패키지기판",
-      "degree": "학사 이상",
-      "experience": "신입",
-      "location": "경기 화성",
-      "deadline": "2026-11-30",
-      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55628776",
-      "source": "사람인",
-      "note": "PCB 관련 직무·4년제 대졸 이상",
-      "degreeVerified": true,
-      "verifiedAt": "2026-11-23",
-      "id": "job6"
     },
     {
       "company": "맥더미드 퍼포먼스 솔루션즈 코리아",
@@ -892,6 +847,51 @@
       "id": "job8"
     },
     {
+      "company": "에이디텍",
+      "title": "반도체 IC Field Application Engineer",
+      "sector": "설계·팹리스",
+      "degree": "학사 이상",
+      "experience": "신입",
+      "location": "경기",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55628814",
+      "source": "사람인",
+      "note": "4년제 대졸 이상 명시",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job2"
+    },
+    {
+      "company": "에이디텍",
+      "title": "PCB 해외 기술영업 (중국어·영어 가능자)",
+      "sector": "PCB·패키지기판",
+      "degree": "학사 이상",
+      "experience": "신입",
+      "location": "경기 화성",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55628776",
+      "source": "사람인",
+      "note": "PCB 관련 직무·4년제 대졸 이상",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job6"
+    },
+    {
+      "company": "에이앤아이",
+      "title": "반도체 자동화 장비 운영 및 비전 SW 개발",
+      "sector": "전공정 장비",
+      "degree": "학사 이상",
+      "experience": "신입·경력",
+      "location": "경기 수원",
+      "deadline": "2026-11-30",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55170549",
+      "source": "사람인",
+      "note": "4년제 대졸 이상 명시",
+      "degreeVerified": true,
+      "verifiedAt": "2026-11-23",
+      "id": "job4"
+    },
+    {
       "company": "테라다인코리아",
       "title": "반도체 기구 설계 엔지니어",
       "sector": "외국계 장비",
@@ -909,9 +909,15 @@
   ],
   "checkedAt": "2026-11-23",
   "sync": {
-    "mode": "not-configured",
-    "lastAttemptAt": null,
-    "lastSearchSuccessAt": null,
-    "scope": "자동 갱신 미설정 · 이전에 확인한 공고 스냅샷"
+    "mode": "public-rss-search",
+    "lastAttemptAt": "2026-11-23 16:16 KST",
+    "lastSearchSuccessAt": "2026-11-23 16:16 KST",
+    "searchQueries": 28,
+    "queriesSucceeded": 28,
+    "candidatePages": 141,
+    "freshlyVerified": 0,
+    "firmsCheckedThisRun": 19,
+    "totalRegisteredFirms": 137,
+    "scope": "Bing 공개 RSS 검색 기반 · 구조화 데이터가 확인된 일부 공고만 표시 · 전체 채용공고 수집 아님"
   }
 }
