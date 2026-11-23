@@ -27,15 +27,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Discover postings (requires search API key)
-        env:
-          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
-        run: |
-          if [ -n "$SERPER_API_KEY" ]; then
-            python update_jobs.py
-          else
-            echo 'SERPER_API_KEY is not configured. Existing postings will be published without fresh discovery.'
-          fi
+      - name: Discover postings via public RSS (no API key)
+        run: python update_jobs.py
 
       - name: Rebuild HTML
         run: python render.py
