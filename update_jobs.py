@@ -1,7 +1,8 @@
 """FABLINK scheduled discovery.
 
-Uses an explicitly configured Serper API key, and accepts only directly fetched
-schema.org JobPosting entries with a future validThrough and clear 4-year degree.
+Uses the public Bing RSS search endpoint (no signup or API key), and accepts
+only directly fetched schema.org JobPosting entries with a future validThrough
+and clear 4-year degree.
 This is best-effort discovery, NOT a comprehensive/live status guarantee.
 """
 import datetime as dt
@@ -11,6 +12,7 @@ import json
 import os
 import re
 import sys
+import xml.etree.ElementTree as ET
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -19,7 +21,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 PATH = ROOT / 'data.json'
 DATA = json.loads(PATH.read_text(encoding='utf-8'))
-KEY = os.environ.get('SERPER_API_KEY', '').strip()
 TZ = dt.timezone(dt.timedelta(hours=9))
 NOW = dt.datetime.now(TZ)
 TODAY = NOW.date()
@@ -40,21 +41,30 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (compatible; FABLINK-job-discovery/1.0)'}
 
 def fetch(url, payload=None):
     headers = dict(HEADERS)
-    if payload is not None:
-        headers.update({'X-API-KEY': KEY, 'Content-Type': 'application/json'})
     req = urllib.request.Request(url, data=json.dumps(payload).encode('utf-8') if payload is not None else None, headers=headers)
     with urllib.request.urlopen(req, timeout=16) as response:
         return response.read().decode('utf-8', errors='replace')
 
 
 def search(q):
+    # Bing's public RSS search response may change or be blocked at any time.
+    # A valid RSS document with zero items is a successful search, NOT verified jobs.
+    url = 'https://www.bing.com/search?' + urllib.parse.urlencode({
+        'q': q, 'format': 'rss', 'setlang': 'ko-KR', 'cc': 'KR'
+    })
     try:
-        doc = json.loads(fetch('https://google.serper.dev/search', {'q': q, 'num': 10, 'gl': 'kr', 'hl': 'ko'}))
-        if 'organic' not in doc and ('message' in doc or 'error' in doc):
-            return [], False
-        return [x['link'] for x in doc.get('organic', []) if str(x.get('link', '')).startswith('https://')], True
+        body = fetch(url)
+        root = ET.fromstring(body)
+        if root.tag != 'rss':
+            raise ValueError('response was not RSS')
+        links = []
+        for item in root.findall('./channel/item'):
+            link = (item.findtext('link') or '').strip()
+            if link.startswith('https://'):
+                links.append(link)
+        return list(dict.fromkeys(links)), True
     except Exception as exc:
-        print('Search failed:', q[:50], str(exc)[:100])
+        print('RSS search failed:', q[:50], str(exc)[:160])
         return [], False
 
 
@@ -155,10 +165,7 @@ def parse_post(url):
 
 
 def main():
-    if not KEY:
-        print('ERROR: SERPER_API_KEY is missing. Cannot perform automatic discovery.', file=sys.stderr)
-        return 2
-    # 137 firms spread across ~7 days to limit daily API cost; broad job searches run every day.
+    # 137 firms spread across ~7 days to limit free RSS requests; broad searches run daily.
     firms = list({c['name']: c for c in DATA['companies']}.values())
     slot = (TODAY - dt.date(2026, 1, 1)).days % 7
     queries = BASIC + [f'"{c["name"]}" 채용 학사 공정기술 엔지니어' for i, c in enumerate(firms) if i % 7 == slot]
@@ -181,14 +188,14 @@ def main():
     DATA['jobs'] = sorted(dedup.values(), key=lambda j: (j['deadline'], j['company']))
     DATA['checkedAt'] = TODAY.isoformat()
     DATA['sync'] = {
-        'mode': 'scheduled-search',
+        'mode': 'public-rss-search',
         'lastAttemptAt': STAMP,
         'lastSearchSuccessAt': STAMP,
         'searchQueries': len(queries), 'queriesSucceeded': success,
         'candidatePages': len(urls), 'freshlyVerified': len(fresh),
         'firmsCheckedThisRun': sum(i % 7 == slot for i in range(len(firms))),
         'totalRegisteredFirms': len(firms),
-        'scope': '일부 공개 채용 페이지의 구조화 데이터 · 전체 채용공고 수집 아님',
+        'scope': 'Bing 공개 RSS 검색 기반 · 구조화 데이터가 확인된 일부 공고만 표시 · 전체 채용공고 수집 아님',
     }
     PATH.write_text(json.dumps(DATA, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f'Successful searches {success}/{len(queries)}, candidates {len(urls)}, verified {len(fresh)}, shown {len(DATA["jobs"])}')
