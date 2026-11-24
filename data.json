@@ -772,21 +772,6 @@
   ],
   "jobs": [
     {
-      "company": "스크린에스피이코리아",
-      "title": "반도체 장비 CS 및 SET UP 엔지니어 (신입)",
-      "sector": "외국계 장비",
-      "degree": "학사 이상",
-      "experience": "신입",
-      "location": "평택·이천·청주·용인 등",
-      "deadline": "2026-11-23",
-      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55502916",
-      "source": "사람인",
-      "note": "학위 요건은 원문에서 재확인 필요",
-      "degreeVerified": false,
-      "verifiedAt": "2026-11-23",
-      "id": "job1"
-    },
-    {
       "company": "딥엑스",
       "title": "AI 반도체 Field Application Engineer (영어 가능)",
       "sector": "설계·팹리스",
@@ -907,14 +892,14 @@
       "id": "job9"
     }
   ],
-  "checkedAt": "2026-11-23",
+  "checkedAt": "2026-11-24",
   "sync": {
     "mode": "public-rss-search",
-    "lastAttemptAt": "2026-11-23 16:16 KST",
-    "lastSearchSuccessAt": "2026-11-23 16:16 KST",
+    "lastAttemptAt": "2026-11-24 09:05 KST",
+    "lastSearchSuccessAt": "2026-11-24 09:05 KST",
     "searchQueries": 28,
     "queriesSucceeded": 28,
-    "candidatePages": 141,
+    "candidatePages": 112,
     "freshlyVerified": 0,
     "firmsCheckedThisRun": 19,
     "totalRegisteredFirms": 137,
