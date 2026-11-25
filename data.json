@@ -892,14 +892,14 @@
       "id": "job9"
     }
   ],
-  "checkedAt": "2026-11-24",
+  "checkedAt": "2026-11-25",
   "sync": {
     "mode": "public-rss-search",
-    "lastAttemptAt": "2026-11-24 09:05 KST",
-    "lastSearchSuccessAt": "2026-11-24 09:05 KST",
+    "lastAttemptAt": "2026-11-25 09:02 KST",
+    "lastSearchSuccessAt": "2026-11-25 09:02 KST",
     "searchQueries": 28,
     "queriesSucceeded": 28,
-    "candidatePages": 112,
+    "candidatePages": 161,
     "freshlyVerified": 0,
     "firmsCheckedThisRun": 19,
     "totalRegisteredFirms": 137,
