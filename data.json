@@ -892,16 +892,16 @@
       "id": "job9"
     }
   ],
-  "checkedAt": "2026-11-25",
+  "checkedAt": "2026-11-26",
   "sync": {
     "mode": "public-rss-search",
-    "lastAttemptAt": "2026-11-25 09:02 KST",
-    "lastSearchSuccessAt": "2026-11-25 09:02 KST",
-    "searchQueries": 28,
-    "queriesSucceeded": 28,
-    "candidatePages": 161,
+    "lastAttemptAt": "2026-11-26 09:04 KST",
+    "lastSearchSuccessAt": "2026-11-26 09:04 KST",
+    "searchQueries": 29,
+    "queriesSucceeded": 29,
+    "candidatePages": 113,
     "freshlyVerified": 0,
-    "firmsCheckedThisRun": 19,
+    "firmsCheckedThisRun": 20,
     "totalRegisteredFirms": 137,
     "scope": "Bing 공개 RSS 검색 기반 · 구조화 데이터가 확인된 일부 공고만 표시 · 전체 채용공고 수집 아님"
   }
